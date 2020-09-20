@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: 84ed74b2dfca07340b2f0044e9d06d06
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4191492915051824877
+    second: ButterflyOnFlower_SpriteSheet_0
+  - first:
+      213: -4003191642559711207
+    second: ButterflyOnFlower_SpriteSheet_1
+  - first:
+      213: 5069028801549967862
+    second: ButterflyOnFlower_SpriteSheet_2
+  - first:
+      213: 264776183871163375
+    second: ButterflyOnFlower_SpriteSheet_3
+  - first:
+      213: 5085727106608989428
+    second: ButterflyOnFlower_SpriteSheet_4
+  - first:
+      213: 3722705989526761042
+    second: ButterflyOnFlower_SpriteSheet_5
+  - first:
+      213: 8792854477251460978
+    second: ButterflyOnFlower_SpriteSheet_6
+  - first:
+      213: 4640244357421397735
+    second: ButterflyOnFlower_SpriteSheet_7
+  - first:
+      213: 6439020076370565765
+    second: ButterflyOnFlower_SpriteSheet_8
+  - first:
+      213: 7897580619130273674
+    second: ButterflyOnFlower_SpriteSheet_9
+  - first:
+      213: 3137413397756019360
+    second: ButterflyOnFlower_SpriteSheet_10
+  - first:
+      213: -230035290518321949
+    second: ButterflyOnFlower_SpriteSheet_11
+  - first:
+      213: -7809972329744534211
+    second: ButterflyOnFlower_SpriteSheet_12
+  - first:
+      213: 3532025149862436377
+    second: ButterflyOnFlower_SpriteSheet_13
+  - first:
+      213: 3985257013868713874
+    second: ButterflyOnFlower_SpriteSheet_14
+  - first:
+      213: -3439445338214899023
+    second: ButterflyOnFlower_SpriteSheet_15
+  - first:
+      213: -5748112737859498210
+    second: ButterflyOnFlower_SpriteSheet_16
+  - first:
+      213: -3449496668225464122
+    second: ButterflyOnFlower_SpriteSheet_17
+  - first:
+      213: -4964146209245790629
+    second: ButterflyOnFlower_SpriteSheet_18
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ButterflyOnFlower_SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 284
+        width: 63
+        height: 63
+      alignment: 9
+      pivot: {x: 0.84, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d2277f1536164048b1e0ef01846bdfe
+      internalID: 4191492915051824877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButterflyOnFlower_SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 284
+        width: 63
+        height: 63
+      alignment: 9
+      pivot: {x: 0.84, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 440ddc102bd6b5c4e8766735014c0445
+      internalID: -4003191642559711207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButterflyOnFlower_SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 284
+        width: 63
+        height: 63
+      alignment: 9
+      pivot: {x: 0.84, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dee78227ac58ff4096216aa50811050
+      internalID: 5069028801549967862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButterflyOnFlower_SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 284
+        width: 63
+        height: 63
+      alignment: 9
+      pivot: {x: 0.84, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d15e48be90892b44a81c0359537b6df
+      internalID: 264776183871163375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButterflyOnFlower_SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 221
+        width: 63
+        height: 63
+      alignment: 9
+      pivot: {x: 0.84, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fd77dcd38a2c274eaa0ed652bbde484
+      internalID: 5085727106608989428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButterflyOnFlower_SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 221
+        width: 63
+        height: 63
+      alignment: 9
+      pivot: {x: 0.84, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4c1e14135468f243a52c969447101f1
+      internalID: 3722705989526761042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButterflyOnFlower_SpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 221
+        width: 63
+        height: 63
+      alignment: 9
+      pivot: {x: 0.84, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 026dfbb33a2707c41bc0b8804f77d4b3
+      internalID: 8792854477251460978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButterflyOnFlower_SpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 221
+        width: 63
+        height: 63
+      alignment: 9
+      pivot: {x: 0.84, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f774a000a5c0184094546b16787a0d4
+      internalID: 4640244357421397735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButterflyOnFlower_SpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 158
+        width: 63
+        height: 63
+      alignment: 9
+      pivot: {x: 0.84, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a245c08b6757b104186e6995ac7e7673
+      internalID: 6439020076370565765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButterflyOnFlower_SpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 158
+        width: 63
+        height: 63
+      alignment: 9
+      pivot: {x: 0.84, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dab23ffecdc9a24890d9d4a6a5a97c9
+      internalID: 7897580619130273674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButterflyOnFlower_SpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 158
+        width: 63
+        height: 63
+      alignment: 9
+      pivot: {x: 0.84, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfd018d292f01f74b9d71a926439d130
+      internalID: 3137413397756019360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButterflyOnFlower_SpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 158
+        width: 63
+        height: 63
+      alignment: 9
+      pivot: {x: 0.84, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9ec30e76a2dcea4abc9747738bf2e02
+      internalID: -230035290518321949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButterflyOnFlower_SpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 95
+        width: 63
+        height: 63
+      alignment: 9
+      pivot: {x: 0.84, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45d062ddac9368549aaf13b15086ac8d
+      internalID: -7809972329744534211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButterflyOnFlower_SpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 95
+        width: 63
+        height: 63
+      alignment: 9
+      pivot: {x: 0.84, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8a96b5ded3b57f44a6301429eac401d
+      internalID: 3532025149862436377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButterflyOnFlower_SpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 95
+        width: 63
+        height: 63
+      alignment: 9
+      pivot: {x: 0.84, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 896a158164e6ebb4d90aa5202d266091
+      internalID: 3985257013868713874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButterflyOnFlower_SpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 95
+        width: 63
+        height: 63
+      alignment: 9
+      pivot: {x: 0.84, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adec08ec69f640c4ab7971f2b23f4ad0
+      internalID: -3439445338214899023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButterflyOnFlower_SpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 63
+        height: 63
+      alignment: 9
+      pivot: {x: 0.84, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a26af1a7ecb743a47b383f42634e7af9
+      internalID: -5748112737859498210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButterflyOnFlower_SpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 32
+        width: 63
+        height: 63
+      alignment: 9
+      pivot: {x: 0.84, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bbf3a34d101ff447a53ee84f23c240f
+      internalID: -3449496668225464122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButterflyOnFlower_SpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 32
+        width: 63
+        height: 63
+      alignment: 9
+      pivot: {x: 0.84, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19a558866a10d5d40b053afed91c6467
+      internalID: -4964146209245790629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

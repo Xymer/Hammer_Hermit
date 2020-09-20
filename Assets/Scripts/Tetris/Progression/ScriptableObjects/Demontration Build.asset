@@ -1,0 +1,327 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98d00512e4ae0c943b8b4ab64425c7bb, type: 3}
+  m_Name: Demontration Build
+  m_EditorClassIdentifier: 
+  maxLevel: 200
+  stages:
+  - blockSprites:
+    - {fileID: -7765447175495716150, guid: 24750c563dacb2d49b6c82c17ec6cab3, type: 3}
+    - {fileID: -1761705805411756641, guid: 24750c563dacb2d49b6c82c17ec6cab3, type: 3}
+    - {fileID: -4441973004044127633, guid: 24750c563dacb2d49b6c82c17ec6cab3, type: 3}
+    - {fileID: 4345663161056879658, guid: 24750c563dacb2d49b6c82c17ec6cab3, type: 3}
+    - {fileID: 6049481937096285766, guid: 24750c563dacb2d49b6c82c17ec6cab3, type: 3}
+    - {fileID: 6049481937096285766, guid: 24750c563dacb2d49b6c82c17ec6cab3, type: 3}
+    - {fileID: 6049481937096285766, guid: 24750c563dacb2d49b6c82c17ec6cab3, type: 3}
+    obsticleSprites:
+    - {fileID: 2128763068820049462, guid: 85d6355c105647e4ca3b8d07279009de, type: 3}
+    - {fileID: 8145309730684907518, guid: 85d6355c105647e4ca3b8d07279009de, type: 3}
+    animatedTile: {fileID: 9100000, guid: cb7f1561e85d5064182d7f3fdc64b69c, type: 2}
+  - blockSprites:
+    - {fileID: -3978554561186086099, guid: 24750c563dacb2d49b6c82c17ec6cab3, type: 3}
+    - {fileID: 2957949935488294617, guid: 24750c563dacb2d49b6c82c17ec6cab3, type: 3}
+    - {fileID: 515671005321523017, guid: 24750c563dacb2d49b6c82c17ec6cab3, type: 3}
+    - {fileID: 7749225568183703758, guid: 24750c563dacb2d49b6c82c17ec6cab3, type: 3}
+    - {fileID: 6796926127574568057, guid: 24750c563dacb2d49b6c82c17ec6cab3, type: 3}
+    - {fileID: 6796926127574568057, guid: 24750c563dacb2d49b6c82c17ec6cab3, type: 3}
+    - {fileID: 6796926127574568057, guid: 24750c563dacb2d49b6c82c17ec6cab3, type: 3}
+    obsticleSprites:
+    - {fileID: -5801810963485755293, guid: 85d6355c105647e4ca3b8d07279009de, type: 3}
+    - {fileID: 2580560484012974245, guid: 85d6355c105647e4ca3b8d07279009de, type: 3}
+    animatedTile: {fileID: 9100000, guid: 38712bc0f22febb4eae3179b4f073cb0, type: 2}
+  - blockSprites:
+    - {fileID: -7155759413190365907, guid: 24750c563dacb2d49b6c82c17ec6cab3, type: 3}
+    - {fileID: 3907428888475938800, guid: 24750c563dacb2d49b6c82c17ec6cab3, type: 3}
+    - {fileID: 7959429133444050399, guid: 24750c563dacb2d49b6c82c17ec6cab3, type: 3}
+    - {fileID: -3904195593378890521, guid: 24750c563dacb2d49b6c82c17ec6cab3, type: 3}
+    - {fileID: 7677310080292463605, guid: 24750c563dacb2d49b6c82c17ec6cab3, type: 3}
+    - {fileID: 7677310080292463605, guid: 24750c563dacb2d49b6c82c17ec6cab3, type: 3}
+    - {fileID: 7677310080292463605, guid: 24750c563dacb2d49b6c82c17ec6cab3, type: 3}
+    obsticleSprites:
+    - {fileID: 1871088744023275715, guid: 85d6355c105647e4ca3b8d07279009de, type: 3}
+    - {fileID: 8880520131589075085, guid: 85d6355c105647e4ca3b8d07279009de, type: 3}
+    animatedTile: {fileID: 9100000, guid: d26c21b9151f5ff498bb422cc0ac77ae, type: 2}
+  progressionNodes:
+  - internalLevel: 0
+    dropFrames: 128
+    lockFrames: 60
+    areFrames: 20
+    areLineFrames: 20
+    lineClearFrames: 80
+    dasFrames: 28
+    gravity: 1
+    scrollRequirement: 4
+    maxHeight: 12
+    blockDifficulty: 2
+    stage: 0
+  - internalLevel: 10
+    dropFrames: 100
+    lockFrames: 60
+    areFrames: 20
+    areLineFrames: 20
+    lineClearFrames: 80
+    dasFrames: 28
+    gravity: 1
+    scrollRequirement: 4
+    maxHeight: 12
+    blockDifficulty: 2
+    stage: 0
+  - internalLevel: 20
+    dropFrames: 80
+    lockFrames: 60
+    areFrames: 20
+    areLineFrames: 20
+    lineClearFrames: 80
+    dasFrames: 28
+    gravity: 1
+    scrollRequirement: 3
+    maxHeight: 12
+    blockDifficulty: 2
+    stage: 0
+  - internalLevel: 30
+    dropFrames: 64
+    lockFrames: 60
+    areFrames: 20
+    areLineFrames: 20
+    lineClearFrames: 80
+    dasFrames: 28
+    gravity: 1
+    scrollRequirement: 3
+    maxHeight: 12
+    blockDifficulty: 3
+    stage: 0
+  - internalLevel: 40
+    dropFrames: 64
+    lockFrames: 60
+    areFrames: 20
+    areLineFrames: 20
+    lineClearFrames: 80
+    dasFrames: 28
+    gravity: 1
+    scrollRequirement: 3
+    maxHeight: 12
+    blockDifficulty: 3
+    stage: 0
+  - internalLevel: 50
+    dropFrames: 64
+    lockFrames: 60
+    areFrames: 20
+    areLineFrames: 20
+    lineClearFrames: 80
+    dasFrames: 28
+    gravity: 1
+    scrollRequirement: 3
+    maxHeight: 12
+    blockDifficulty: 3
+    stage: 0
+  - internalLevel: 60
+    dropFrames: 40
+    lockFrames: 60
+    areFrames: 20
+    areLineFrames: 20
+    lineClearFrames: 80
+    dasFrames: 28
+    gravity: 1
+    scrollRequirement: 3
+    maxHeight: 10
+    blockDifficulty: 4
+    stage: 1
+  - internalLevel: 70
+    dropFrames: 35
+    lockFrames: 60
+    areFrames: 20
+    areLineFrames: 20
+    lineClearFrames: 80
+    dasFrames: 28
+    gravity: 1
+    scrollRequirement: 3
+    maxHeight: 10
+    blockDifficulty: 4
+    stage: 1
+  - internalLevel: 80
+    dropFrames: 35
+    lockFrames: 60
+    areFrames: 20
+    areLineFrames: 20
+    lineClearFrames: 80
+    dasFrames: 28
+    gravity: 1
+    scrollRequirement: 2
+    maxHeight: 10
+    blockDifficulty: 4
+    stage: 1
+  - internalLevel: 90
+    dropFrames: 35
+    lockFrames: 60
+    areFrames: 20
+    areLineFrames: 20
+    lineClearFrames: 80
+    dasFrames: 28
+    gravity: 1
+    scrollRequirement: 2
+    maxHeight: 10
+    blockDifficulty: 5
+    stage: 1
+  - internalLevel: 100
+    dropFrames: 30
+    lockFrames: 60
+    areFrames: 20
+    areLineFrames: 20
+    lineClearFrames: 80
+    dasFrames: 28
+    gravity: 1
+    scrollRequirement: 2
+    maxHeight: 10
+    blockDifficulty: 5
+    stage: 1
+  - internalLevel: 110
+    dropFrames: 25
+    lockFrames: 60
+    areFrames: 20
+    areLineFrames: 20
+    lineClearFrames: 80
+    dasFrames: 28
+    gravity: 1
+    scrollRequirement: 2
+    maxHeight: 10
+    blockDifficulty: 5
+    stage: 1
+  - internalLevel: 120
+    dropFrames: 25
+    lockFrames: 60
+    areFrames: 20
+    areLineFrames: 20
+    lineClearFrames: 80
+    dasFrames: 28
+    gravity: 1
+    scrollRequirement: 2
+    maxHeight: 10
+    blockDifficulty: 5
+    stage: 2
+  - internalLevel: 130
+    dropFrames: 20
+    lockFrames: 60
+    areFrames: 20
+    areLineFrames: 20
+    lineClearFrames: 80
+    dasFrames: 28
+    gravity: 1
+    scrollRequirement: 2
+    maxHeight: 10
+    blockDifficulty: 5
+    stage: 2
+  - internalLevel: 140
+    dropFrames: 20
+    lockFrames: 55
+    areFrames: 20
+    areLineFrames: 20
+    lineClearFrames: 80
+    dasFrames: 28
+    gravity: 1
+    scrollRequirement: 2
+    maxHeight: 9
+    blockDifficulty: 5
+    stage: 2
+  - internalLevel: 150
+    dropFrames: 20
+    lockFrames: 60
+    areFrames: 20
+    areLineFrames: 20
+    lineClearFrames: 80
+    dasFrames: 28
+    gravity: 1
+    scrollRequirement: 2
+    maxHeight: 9
+    blockDifficulty: 5
+    stage: 2
+  - internalLevel: 160
+    dropFrames: 20
+    lockFrames: 50
+    areFrames: 20
+    areLineFrames: 20
+    lineClearFrames: 80
+    dasFrames: 28
+    gravity: 1
+    scrollRequirement: 1
+    maxHeight: 9
+    blockDifficulty: 5
+    stage: 2
+  - internalLevel: 170
+    dropFrames: 20
+    lockFrames: 45
+    areFrames: 20
+    areLineFrames: 20
+    lineClearFrames: 80
+    dasFrames: 28
+    gravity: 1
+    scrollRequirement: 1
+    maxHeight: 9
+    blockDifficulty: 5
+    stage: 2
+  - internalLevel: 180
+    dropFrames: 15
+    lockFrames: 40
+    areFrames: 20
+    areLineFrames: 20
+    lineClearFrames: 80
+    dasFrames: 28
+    gravity: 1
+    scrollRequirement: 1
+    maxHeight: 8
+    blockDifficulty: 5
+    stage: 2
+  - internalLevel: 190
+    dropFrames: 10
+    lockFrames: 40
+    areFrames: 20
+    areLineFrames: 20
+    lineClearFrames: 80
+    dasFrames: 28
+    gravity: 1
+    scrollRequirement: 1
+    maxHeight: 8
+    blockDifficulty: 5
+    stage: 2
+  - internalLevel: 200
+    dropFrames: 2
+    lockFrames: 40
+    areFrames: 20
+    areLineFrames: 20
+    lineClearFrames: 80
+    dasFrames: 28
+    gravity: 20
+    scrollRequirement: 2
+    maxHeight: 12
+    blockDifficulty: 8
+    stage: 3
+  - internalLevel: 99999
+    dropFrames: 2
+    lockFrames: 30
+    areFrames: 8
+    areLineFrames: 8
+    lineClearFrames: 12
+    dasFrames: 12
+    gravity: 20
+    scrollRequirement: 1
+    maxHeight: 8
+    blockDifficulty: 8
+    stage: 3
+  musicEvents:
+  - internalLevel: 0
+    fadeMusic: 0
+    musicIndex: 0
+  - internalLevel: 1000
+    fadeMusic: 0
+    musicIndex: 1
+  - internalLevel: 99999
+    fadeMusic: 1
+    musicIndex: 0
