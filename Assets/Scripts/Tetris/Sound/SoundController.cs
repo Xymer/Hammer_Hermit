@@ -26,6 +26,7 @@ public class SoundController : MonoBehaviour
 
     public List<AudioClip> soundLibrary;
     public List<AudioClip> musicLibrary;
+    [SerializeField, Range(0f,1f)] private float BGMVolume = .6f;
 
     public void PlaySound(string sound, float volumeScale = 1)
     {
@@ -43,7 +44,7 @@ public class SoundController : MonoBehaviour
     {
         BGM.Stop();
         StopAllCoroutines();
-        BGM.volume = 1;
+        BGM.volume = BGMVolume;
         BGM.clip = musicLibrary[musicIndex];
         BGM.loop = true;
         BGM.Play();

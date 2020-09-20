@@ -470,8 +470,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 9aab0b475209fdc4485cf96bd33e8182, type: 3}
   - {fileID: 8300000, guid: e1f96bd8efa484a42bbb3cad3a07a767, type: 3}
   - {fileID: 8300000, guid: 45a7818e254d7e1458e8eddfca041bd6, type: 3}
-  - {fileID: 8300000, guid: 903bf3c7f2bb8604daccf11f61c7128d, type: 3}
   - {fileID: 8300000, guid: 79b9182834f227b4b8d0093c97c11df4, type: 3}
+  - {fileID: 8300000, guid: 903bf3c7f2bb8604daccf11f61c7128d, type: 3}
   - {fileID: 8300000, guid: 803fd16100033034d9129a483095c597, type: 3}
   - {fileID: 8300000, guid: 88786745ea09c0d468ad75878c4781f4, type: 3}
   - {fileID: 8300000, guid: d8ec783077f44dd40ade0ddd3fc359de, type: 3}
@@ -496,7 +496,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0b6ad37b0bc22a24380c539b9e644e49, type: 3}
   - {fileID: 8300000, guid: 2b5921ff2749d3445bf3340b2caefbc5, type: 3}
   musicLibrary:
-  - {fileID: 8300000, guid: 654f4814e96ef9848ac62f226c97dda1, type: 3}
+  - {fileID: 8300000, guid: 05731da7bf236454a8d935e75a0ce98c, type: 3}
+  BGMVolume: 0.6
 --- !u!1 &127603371 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4389791157383751514, guid: 6bf6069a27d08db4ab00719a4d9af9d8,
@@ -649,7 +650,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 124.4
+  m_fontSize: 117.85
   m_fontSizeBase: 65.81
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1611,7 +1612,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 59.85
+  m_fontSize: 56.7
   m_fontSizeBase: 90
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2197,7 +2198,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 44.5
+  m_fontSize: 42.25
   m_fontSizeBase: 90
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2858,7 +2859,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 35.9
+  m_fontSize: 34
   m_fontSizeBase: 65.81
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4273,7 +4274,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 60.55
+  m_fontSize: 57.4
   m_fontSizeBase: 90
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4725,7 +4726,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 46.65
+  m_fontSize: 44.25
   m_fontSizeBase: 90
   m_fontWeight: 400
   m_enableAutoSizing: 1
