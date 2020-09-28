@@ -580,7 +580,7 @@ public class Matrix : MonoBehaviour
             {
                 break;
             }
-            var aboveMino = grid[x, y];
+            var aboveMino = grid[x, y + aboveY];
 
             if (aboveMino.IsFalling)
             {
@@ -697,6 +697,8 @@ public class Matrix : MonoBehaviour
     {
         for (int y = 0; y < height; y++)
             DestroyLine(y);
+        colliderGrid.gameObject.SetActive(false);
+        colliderGrid.gameObject.SetActive(true);
     }
 
     /// <summary>
@@ -776,6 +778,7 @@ public class Matrix : MonoBehaviour
             {
                 continue;
             }
+            Debug.Log(grid[i, yPos].type);
             Destroy(grid[i, yPos].gameObject);
             colliderGrid.SetTile(new Vector3Int(i, yPos, 0), null);
             grid[i, yPos] = null;

@@ -161,11 +161,10 @@ public class IceClimberMovement : MonoBehaviour
 
     void MovePlayer()
     {
-        Debug.Log(input.Horizontal);
         float horizontalMovement = (Stunned || dying) ? (!jumping ? 0 : horizontalDirection) : input.Horizontal;//Input.GetAxisRaw("Horizontal");
         bool isMoving = horizontalMovement != 0;
-        if (Stunned)
-            Debug.Log("Horizontal Movement: " + horizontalMovement);
+        //if (Stunned)
+        //    Debug.Log("Horizontal Movement: " + horizontalMovement);
         if (!jumping)
         {
             animator.SetFloat("Speed", Mathf.Abs(horizontalMovement));
@@ -206,15 +205,15 @@ public class IceClimberMovement : MonoBehaviour
             Physics2D.Raycast(transform.position + (currentBackwardDirection * .2f) + (Vector3.up * 1.7f), currentBackwardDirection, backRayDistance, terrainLayer)
         };
         #region Collision Debugs
-        /*//Show Back Wall Collision Checks
+        //Show Back Wall Collision Checks
         Debug.DrawLine(transform.position + (currentForwardDirection * .2f) + (Vector3.up * .05f), transform.position + (Vector3.up * .05f) + (currentForwardDirection * rayDistance), Color.red);
         Debug.DrawLine(transform.position + (currentForwardDirection * .2f) + (Vector3.up * 1f), transform.position + (Vector3.up * 1f) + (currentForwardDirection * rayDistance), Color.red);
         Debug.DrawLine(transform.position + (currentForwardDirection * .2f) + (Vector3.up * 1.7f), transform.position + (Vector3.up * 1.7f) + (currentForwardDirection * rayDistance), Color.red);
-        *//*//Show Front Wall Collision Checks
+        //Show Front Wall Collision Checks
         Debug.DrawLine(transform.position + (currentBackwardDirection * .2f) + (Vector3.up * .05f), transform.position + (Vector3.up * .05f) + (currentBackwardDirection * rayDistance), Color.red);
         Debug.DrawLine(transform.position + (currentBackwardDirection * .2f) + (Vector3.up * 1f), transform.position + (Vector3.up * 1f) + (currentBackwardDirection * rayDistance), Color.red);
         Debug.DrawLine(transform.position + (currentBackwardDirection * .2f) + (Vector3.up * 1.7f), transform.position + (Vector3.up * 1.7f) + (currentBackwardDirection * rayDistance), Color.red);
-        */
+        
         #endregion
         RaycastHit2D forwardHit = frontWallRaycasts.FirstOrDefault(ray => ray.collider != null);
         RaycastHit2D backwardHit = backWallRaycasts.FirstOrDefault(ray => ray.collider != null);
@@ -351,7 +350,8 @@ public class IceClimberMovement : MonoBehaviour
                     if (matrix.IsPositionObstructed(flooredPosition))
                     {
                         Transform gridNode = matrix.GetNodeFromGrid(flooredPosition);
-                        matrix.DestroyBlock(Vector2Int.RoundToInt(gridNode.transform.position));
+                        if(gridNode != null)
+                            matrix.DestroyBlock(Vector2Int.RoundToInt(gridNode.transform.position));
                         break;
                     }
                 }

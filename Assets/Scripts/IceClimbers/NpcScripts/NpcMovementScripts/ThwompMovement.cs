@@ -8,14 +8,22 @@ public class ThwompMovement : MonoBehaviour
     [SerializeField] private Transform target;
     [SerializeField, Range(0, 20)] private float moveSpeed = 2f;
     [SerializeField, Range(0, 20)] private float returnSpeed = 1f;
+    [SerializeField, Range(0, 10)] private float cooldownDuration = 5f; 
     [SerializeField] private float xGridOffset = 11f;
     [SerializeField] private Matrix matrix;
+
     private float startOffset;
+    private float cooldownTime;
     private Vector2Int predictedPosition;
     private Vector2 startSide = Vector2.zero;
+
     private bool isAttacking = false;
     private bool isReturning = false;
+
     private Animator thwompAnimator;
+
+    private bool OnCooldown => Time.time <= cooldownTime;
+
     #endregion
     #region Unity methods
     private void Awake()
@@ -43,7 +51,7 @@ public class ThwompMovement : MonoBehaviour
         PredictPosition();
         if (IsPlayerInHeight())
         {
-            isAttacking = true;
+            OnThompAttack();
         }
         ThwompAnimator();
         ThwompAttack();
@@ -57,6 +65,15 @@ public class ThwompMovement : MonoBehaviour
     }
     #endregion
     #region My methods
+    private void OnThompAttack()
+    {
+        if (OnCooldown)
+            return;
+        SoundController.instance.PlaySound("trapalarm", 0.5f);
+        isAttacking = true;
+        cooldownTime = cooldownDuration + Time.time;
+    }
+
     private void ThwompAnimator()
     {
         thwompAnimator.SetBool("IsAttacking", isAttacking);
@@ -91,7 +108,6 @@ public class ThwompMovement : MonoBehaviour
         {
             if (Mathf.FloorToInt(transform.position.y) == Mathf.FloorToInt(target.position.y + 1))
             {
-                SoundController.instance.PlaySound("trapalarm", 0.5f);
                 return true;
             }
             else
@@ -117,6 +133,8 @@ public class ThwompMovement : MonoBehaviour
     }
     private void BreakableInPath()
     {
+        if (!isAttacking)
+            return;
         List<Vector2Int> thwompCollisionPositions = new List<Vector2Int>();
         thwompCollisionPositions.Add(new Vector2Int(Mathf.RoundToInt(predictedPosition.x), Mathf.RoundToInt(transform.position.y + GetComponent<SpriteRenderer>().bounds.extents.y)));
         thwompCollisionPositions.Add(new Vector2Int(Mathf.RoundToInt(predictedPosition.x), Mathf.RoundToInt(transform.position.y - GetComponent<SpriteRenderer>().bounds.extents.y)));

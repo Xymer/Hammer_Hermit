@@ -176,7 +176,7 @@ public class GameDirector : MonoBehaviour
 
     private IEnumerator ChangeAlpha(CanvasGroup group, float alphaTarget)
     {
-        float speed = 0.1f;
+        float speed = 0.01f;
 
         if (alphaTarget > 0)
             group.gameObject.SetActive(true);

@@ -87,7 +87,7 @@ public class cloudRandomizer : MonoBehaviour
             float moveSpeed = list[i].transform.position.z * speedMultiplier;
 
             //Moves the object by adding the moveSPeed and a speed multiplier
-            list[i].transform.position = new Vector3(list[i].transform.position.x + (moveSpeed * direction), list[i].transform.position.y, list[i].transform.position.z);
+            list[i].transform.position = new Vector3(list[i].transform.position.x + (moveSpeed * direction * Time.deltaTime), list[i].transform.position.y, list[i].transform.position.z);
 
             //If the object reaches the cutoff position, it moves back to the inverted position and starts over
             if (list[i].transform.position.x > cutOff)

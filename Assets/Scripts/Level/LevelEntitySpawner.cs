@@ -20,7 +20,7 @@ public class LevelEntitySpawner : MonoBehaviour
     }
     void HeightReached()
     {
-        Debug.Log(ScoreController.instance.Level);
+        //Debug.Log(ScoreController.instance.Level);
         heightLevel++;
         if (Random.Range(0f, 1f) < .125f)
         {
