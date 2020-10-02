@@ -13,7 +13,7 @@ public class Spawner : MonoBehaviour
 
     List<Tetromino> drought;
 
-    [SerializeField] Matrix matrix;
+    [SerializeField] Matrix matrix = null;
 
     Dictionary<Mino.MinoType, int> lastTypes = new Dictionary<Mino.MinoType, int>();
 
@@ -36,10 +36,8 @@ public class Spawner : MonoBehaviour
     /// </summary>
     public void InstantiateBag()
     {
-        foreach (var item in queue)
-        {
-            Destroy(item.gameObject);
-        }
+        CleanQueue();
+
         drought = tetrominoTypes;
         bag = new List<Tetromino>();
         history = new List<Tetromino>();
@@ -213,5 +211,14 @@ public class Spawner : MonoBehaviour
     public void UpdateQueue()
     {
         GetComponentInChildren<Queue>().UpdateQueue(queue);
+    }
+    public void CleanQueue()
+    {
+        for(int i = queue.Count - 1; i >= 0; i--)
+        {
+            Destroy(queue[i].gameObject);
+            queue.Remove(queue[i]);
+        }
+
     }
 }

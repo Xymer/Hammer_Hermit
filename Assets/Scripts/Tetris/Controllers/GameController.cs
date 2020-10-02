@@ -36,7 +36,6 @@ public class GameController : MonoBehaviour
     {
         spawner.gameObject.SetActive(true);
         spawner.InstantiateBag();
-        spawner.UpdateQueue();
     }
 
     /// <summary>
@@ -50,7 +49,6 @@ public class GameController : MonoBehaviour
         spawner.UpdateQueue();
         InstantiateTimers();
         ghost.CreateGhost(activeTetromino);
-        UIController.instance.UpdateLives(gameDirector.playerLives);
     }
 
     /// <summary>
@@ -58,6 +56,7 @@ public class GameController : MonoBehaviour
     /// </summary>
     public void OnGameOver()
     {
+        spawner.CleanQueue();
         if (spawner.gameObject.activeSelf)
             spawner.gameObject.SetActive(false);
         GameRules.instance.gameStarted = false;

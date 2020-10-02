@@ -2,20 +2,20 @@
 internal enum PlayerButton { A, B, X, Y, LeftBumper, RightBumper, LeftTrigger, RightTrigger, Start, Select, Left, Right, Up, Down }
 public class IndividualInput
 {
-    private string horizontalAxis;
-    private string verticalAxis;
-    private string triggerAxis;
+    private string horizontalAxis = "";
+    private string verticalAxis = "";
+    private string triggerAxis = "";
 
-    private string aButton;
-    private string bButton;
-    private string xButton;
-    private string yButton;
+    private string aButton = "";
+    private string bButton = "";
+    private string xButton = "";
+    private string yButton = "";
 
-    private string leftBumper;
-    private string rightBumper;
+    private string leftBumper = "";
+    private string rightBumper = "";
 
-    private string startButton;
-    private string selectButton;
+    private string startButton = "";
+    private string selectButton = "";
 
     public float Horizontal { get; set; }
     public float Vertical { get; set; }
@@ -25,9 +25,9 @@ public class IndividualInput
     private float lastVerticalValue;
     private float lastTriggerValue;
 
-    private bool horizontalHeld;
-    private bool verticalHeld;
-    private bool triggerHeld;
+    private bool horizontalHeld = false;
+    private bool verticalHeld = false;
+    private bool triggerHeld = false;
 
     public int controllerNumber;
     public bool HasControllerAssigned { get { return controllerNumber > 0; } }
@@ -224,7 +224,7 @@ public class IndividualInput
     internal void SetControllerOption(int p_number)
     {
         controllerNumber = p_number;
-        Debug.Log("Controller number " + controllerNumber);
+        //Debug.Log("Controller number " + controllerNumber);
 
         horizontalAxis = controllerNumber + " Horizontal";
         verticalAxis = controllerNumber + " Vertical";

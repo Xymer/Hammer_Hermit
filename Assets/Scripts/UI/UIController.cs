@@ -39,6 +39,8 @@ public class UIController : MonoBehaviour
     [SerializeField]
     TextMeshProUGUI lives;
     [SerializeField]
+    Canvas worldSpaceCanvas;
+    [SerializeField]
     Image grade;
     [SerializeField]
     Sprite[] grades;
@@ -117,11 +119,11 @@ public class UIController : MonoBehaviour
         endScreenScore.gameObject.SetActive(true);
         if (score.score>PlayerPrefs.GetInt("TopScore",0))
         {
-            endScreenHiScore.text = $"Hi-Score: \n {score.score.ToString().PadLeft(7, '0')}";
+            endScreenHiScore.text = $"Hi-Score:\n{score.score.ToString().PadLeft(7, '0')}";
         }
         else
         {
-            endScreenHiScore.text = $"Hi-Score: \n {PlayerPrefs.GetInt("TopScore", 0).ToString().PadLeft(7, '0')}";
+            endScreenHiScore.text = $"Hi-Score:\n{PlayerPrefs.GetInt("TopScore", 0).ToString().PadLeft(7, '0')}";
         }      
         endScreenHiScore.gameObject.SetActive(true);
         yield return new WaitForSeconds(1.5f);
@@ -154,7 +156,10 @@ public class UIController : MonoBehaviour
         scoreText.gameObject.SetActive(display);
         level.gameObject.SetActive(display);
         nextRequirement.gameObject.SetActive(display);
-        grade.gameObject.SetActive(display);
+        grade.transform.parent.gameObject.SetActive(display);
+        multiplier.gameObject.SetActive(display);
+        lives.gameObject.SetActive(display);
+        worldSpaceCanvas.gameObject.SetActive(display);
     }
 
     public void EndScreen(bool display = true)

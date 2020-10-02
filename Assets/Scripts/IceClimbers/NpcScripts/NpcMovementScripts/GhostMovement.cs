@@ -50,7 +50,7 @@ public class GhostMovement : MonoBehaviour
     void GhostMove()
     {
         //Moves the ghost depending on the speed and direction
-        transform.position = new Vector3(transform.position.x + (moveSpeed * spawnDirection),transform.position.y);
+        transform.position = new Vector3(transform.position.x + (moveSpeed * spawnDirection) * Time.deltaTime,transform.position.y);
 
         //If the ghost reaches either side of the screen, it will be destroyed.
         if ((transform.position.x > spawnPositionX * -spawnDirection && transform.position.x > spawnPositionX * spawnDirection) ||

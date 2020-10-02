@@ -7,7 +7,7 @@ using Random = UnityEngine.Random;
 
 public class IceClimberMovement : MonoBehaviour
 {
-    [SerializeField] private Vector3 startPosition;
+    [SerializeField] private Vector3 startPosition = new Vector3(0f, 10f, 0f);
 
     [SerializeField] private float walkSpeed = 6;
     [SerializeField] private float gravityScale = 2000f;
@@ -22,7 +22,7 @@ public class IceClimberMovement : MonoBehaviour
     public bool Stunned { get => stunTime > 0; }
     private Vector2 stunDirectionModifier = Vector2.one;
 
-    [SerializeField] private float invulnerableDuration;
+    [SerializeField] private float invulnerableDuration = 1f;
     private float invulnerableTime;
     public bool Invulnerable { get => invulnerableTime > 0; }
 
@@ -30,7 +30,7 @@ public class IceClimberMovement : MonoBehaviour
     [NonSerialized] public bool dying = false;
     [NonSerialized] public UnityEvent directorevent;
 
-    [SerializeField] private Matrix matrix;
+    [SerializeField] private Matrix matrix = null;
     private Animator animator;
 
     private const float GRAVITATIONALDIRECTION = -1;
@@ -41,7 +41,7 @@ public class IceClimberMovement : MonoBehaviour
     float verticalDirection { get { return moveUp < 0 ? FEETOFFSET : HEADOFFSET; } }
     int horizontalDirection = -1;
 
-    [SerializeField] private LayerMask terrainLayer;
+    [SerializeField] private LayerMask terrainLayer = 0;
 
     private bool waitingForCountdown;
     public bool WaitingForCountdown

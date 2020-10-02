@@ -9,10 +9,10 @@ public class Background : MonoBehaviour
 
     #region Variables
 
-    [SerializeField] GameObject indirectLightObject;
-    [SerializeField] GameObject rimLightObject;
-    [SerializeField] GameObject background;
-    [SerializeField] GameObject pillars;
+    [SerializeField] GameObject indirectLightObject = null;
+    [SerializeField] GameObject rimLightObject = null;
+    [SerializeField] GameObject background = null;
+    [SerializeField] GameObject pillars = null;
 
     Vector3 tempVelocity;
 
@@ -25,8 +25,8 @@ public class Background : MonoBehaviour
     float indirectLightIntensity;
     float rimLightIntensity;
 
-    [SerializeField] float indirectLightIntensityMultiplier;
-    [SerializeField] float rimLightIntensityMultiplier;
+    [SerializeField] float indirectLightIntensityMultiplier = 0.01f;
+    [SerializeField] float rimLightIntensityMultiplier = 0.15f;
 
     bool getBackgroundPos = true;
     float startPos = -50f;

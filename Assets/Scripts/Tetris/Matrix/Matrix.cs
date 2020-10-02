@@ -20,17 +20,16 @@ public class Matrix : MonoBehaviour
     //Private
     int iterations;
 
-    [SerializeField] bool scrollingEnabled;
+    [SerializeField] bool scrollingEnabled = false;
     [SerializeField] GameObject gridTile = null;
-    [SerializeField] GameObject minoBoarder = null;
     [SerializeField] Mino mino = null;
-    [SerializeField] GameController gameController;
-    [SerializeField] public ParticleSystem breakParticle;
+    [SerializeField] GameController gameController = null;
+    [SerializeField] public ParticleSystem breakParticle = null;
 
     Mino[,] grid;
-    [SerializeField] Tilemap colliderGrid;
-    [SerializeField] Tilemap fallingColliderGrid;
-    [SerializeField] TileBase colliderTile;
+    [SerializeField] Tilemap colliderGrid = null;
+    [SerializeField] Tilemap fallingColliderGrid = null;
+    [SerializeField] TileBase colliderTile = null;
     [NonSerialized] public List<int> completedLines = new List<int>();
 
 
@@ -778,7 +777,6 @@ public class Matrix : MonoBehaviour
             {
                 continue;
             }
-            Debug.Log(grid[i, yPos].type);
             Destroy(grid[i, yPos].gameObject);
             colliderGrid.SetTile(new Vector3Int(i, yPos, 0), null);
             grid[i, yPos] = null;

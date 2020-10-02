@@ -26,4 +26,15 @@ public class Queue : MonoBehaviour
             queue[i].transform.localScale = nextQueue[i].transform.localScale;
         }
     }
+
+    public void CleanQueue()
+    {
+        if (nextQueue[0].transform.childCount > 0)
+        {
+            for (int i = 0; i < nextQueue.Count; i++)
+            {
+                Destroy(nextQueue[i].transform.GetChild(0).gameObject);
+            }
+        }
+    }
 }

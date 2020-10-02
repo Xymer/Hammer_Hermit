@@ -4,7 +4,7 @@ using UnityEngine;
 public class PlayerHammer : MonoBehaviour
 {
     #region Variables
-    [SerializeField] Matrix matrix;
+    [SerializeField] Matrix matrix = null;
     [SerializeField] private int hammerOffset = 1;
     [SerializeField] private float activeHitboxTime;
     [SerializeField] private float activeHitboxDuration = 0.25f;

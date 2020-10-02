@@ -9,7 +9,7 @@ public class BatMovement : MonoBehaviour
     [SerializeField] private float radiusOffset = 2f;
     [SerializeField] private float attackRange = 1f;
     [SerializeField] private float cooldown = 1.25f;
-    [SerializeField] private Vector3 offset;
+    [SerializeField] private Vector3 offset = Vector3.zero;
     private bool hasHitPlayer = false;
     private bool hasSeenPlayer = false;
     private bool isAttacking = false;

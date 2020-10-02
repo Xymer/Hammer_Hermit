@@ -4,17 +4,19 @@ using UnityEngine;
 public class GameDirector : MonoBehaviour
 {
     [SerializeField] private IceClimberMovement player;
-    [SerializeField] private PlayerInput tetrisPlayer;
-    [SerializeField] private Matrix matrix;
+    [SerializeField] private PlayerInput tetrisPlayer = null;
+    [SerializeField] private Matrix matrix = null;
 
-    [SerializeField] public int playerLives = 3;
+    [SerializeField] public int playerMaxLives = 3;
+    private int playerLives;
 
     [SerializeField] private bool atTitleScreen;
-    [SerializeField] private CanvasGroup titleScreenGroup;
-    [SerializeField] private CanvasGroup gameScreenGroup;
+    [SerializeField] private CanvasGroup titleScreenGroup = null;
+    [SerializeField] private CanvasGroup gameScreenGroup = null;
+    [SerializeField] private CanvasGroup worldSpaceGroup = null;
 
-    [SerializeField] private Animator countdownAnimator;
-    [SerializeField] private AudioSource music;
+    [SerializeField] private Animator countdownAnimator = null;
+    [SerializeField] private AudioSource music = null;
     static public bool disableControls = false;
     public int totalPlayers;
     private void Awake()
@@ -84,7 +86,9 @@ public class GameDirector : MonoBehaviour
 
     private IEnumerator Countdown()
     {
-        playerLives = 2;
+        playerLives = playerMaxLives;
+        UIController.instance.UpdateLives(playerLives);
+
         matrix.UpdateQueue();
         SoundController.instance.SetMusic(0);
         UIController.instance.DefaultValues();
@@ -172,6 +176,10 @@ public class GameDirector : MonoBehaviour
 
         StartCoroutine(ChangeAlpha(groupToHide, 0));
         StartCoroutine(ChangeAlpha(groupToShow, 1));
+        if (toTitleScreen)
+            StartCoroutine(ChangeAlpha(worldSpaceGroup, 0));
+        else
+            StartCoroutine(ChangeAlpha(worldSpaceGroup, 1));
     }
 
     private IEnumerator ChangeAlpha(CanvasGroup group, float alphaTarget)
@@ -211,6 +219,12 @@ public class GameDirector : MonoBehaviour
         groupToHide.gameObject.SetActive(false);
         groupToShow.alpha = 1;
         groupToShow.gameObject.SetActive(true);
+
+        if (toTitleScreen)
+            if (toTitleScreen)
+                worldSpaceGroup.gameObject.SetActive(false);
+            else
+                worldSpaceGroup.gameObject.SetActive(true);
     }
 
     private void QuitGame()
