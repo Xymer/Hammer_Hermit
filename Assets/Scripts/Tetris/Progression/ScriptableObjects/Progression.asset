@@ -61,7 +61,7 @@ MonoBehaviour:
     gravity: 1
     scrollRequirement: 4
     maxHeight: 12
-    blockDifficulty: 5
+    blockDifficulty: 2
     stage: 0
   - internalLevel: 50
     dropFrames: 100
@@ -146,7 +146,7 @@ MonoBehaviour:
     scrollRequirement: 3
     maxHeight: 10
     blockDifficulty: 6
-    stage: 1
+    stage: 2
   - internalLevel: 400
     dropFrames: 35
     lockFrames: 60
@@ -158,7 +158,7 @@ MonoBehaviour:
     scrollRequirement: 2
     maxHeight: 10
     blockDifficulty: 6
-    stage: 1
+    stage: 2
   - internalLevel: 450
     dropFrames: 35
     lockFrames: 60
@@ -170,7 +170,7 @@ MonoBehaviour:
     scrollRequirement: 2
     maxHeight: 10
     blockDifficulty: 6
-    stage: 1
+    stage: 2
   musicEvents:
   - internalLevel: 0
     fadeMusic: 0
