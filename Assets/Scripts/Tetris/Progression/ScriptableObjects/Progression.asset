@@ -18,9 +18,9 @@ MonoBehaviour:
     - {fileID: -7765447175495716150, guid: 24750c563dacb2d49b6c82c17ec6cab3, type: 3}
     - {fileID: -1761705805411756641, guid: 24750c563dacb2d49b6c82c17ec6cab3, type: 3}
     - {fileID: -4441973004044127633, guid: 24750c563dacb2d49b6c82c17ec6cab3, type: 3}
-    - {fileID: 4345663161056879658, guid: 24750c563dacb2d49b6c82c17ec6cab3, type: 3}
     - {fileID: 6049481937096285766, guid: 24750c563dacb2d49b6c82c17ec6cab3, type: 3}
     - {fileID: 4989573437497670355, guid: 13e6b63ce1a3d844f8ef97e4d6020821, type: 3}
+    - {fileID: 4345663161056879658, guid: 24750c563dacb2d49b6c82c17ec6cab3, type: 3}
     - {fileID: 21300000, guid: 38f38c7dd71575f45ae3c54b5abfb016, type: 3}
     obsticleSprites:
     - {fileID: 2128763068820049462, guid: 85d6355c105647e4ca3b8d07279009de, type: 3}
@@ -30,9 +30,9 @@ MonoBehaviour:
     - {fileID: -3978554561186086099, guid: 24750c563dacb2d49b6c82c17ec6cab3, type: 3}
     - {fileID: 2957949935488294617, guid: 24750c563dacb2d49b6c82c17ec6cab3, type: 3}
     - {fileID: 515671005321523017, guid: 24750c563dacb2d49b6c82c17ec6cab3, type: 3}
-    - {fileID: 7749225568183703758, guid: 24750c563dacb2d49b6c82c17ec6cab3, type: 3}
     - {fileID: 6796926127574568057, guid: 24750c563dacb2d49b6c82c17ec6cab3, type: 3}
     - {fileID: -2178420479088931006, guid: 13e6b63ce1a3d844f8ef97e4d6020821, type: 3}
+    - {fileID: 7749225568183703758, guid: 24750c563dacb2d49b6c82c17ec6cab3, type: 3}
     - {fileID: 21300000, guid: 38f38c7dd71575f45ae3c54b5abfb016, type: 3}
     obsticleSprites:
     - {fileID: -5801810963485755293, guid: 85d6355c105647e4ca3b8d07279009de, type: 3}
@@ -42,9 +42,9 @@ MonoBehaviour:
     - {fileID: -7155759413190365907, guid: 24750c563dacb2d49b6c82c17ec6cab3, type: 3}
     - {fileID: 3907428888475938800, guid: 24750c563dacb2d49b6c82c17ec6cab3, type: 3}
     - {fileID: 7959429133444050399, guid: 24750c563dacb2d49b6c82c17ec6cab3, type: 3}
-    - {fileID: -3904195593378890521, guid: 24750c563dacb2d49b6c82c17ec6cab3, type: 3}
     - {fileID: 7677310080292463605, guid: 24750c563dacb2d49b6c82c17ec6cab3, type: 3}
     - {fileID: 5722844727832797044, guid: 13e6b63ce1a3d844f8ef97e4d6020821, type: 3}
+    - {fileID: -3904195593378890521, guid: 24750c563dacb2d49b6c82c17ec6cab3, type: 3}
     - {fileID: 21300000, guid: 38f38c7dd71575f45ae3c54b5abfb016, type: 3}
     obsticleSprites:
     - {fileID: 1871088744023275715, guid: 85d6355c105647e4ca3b8d07279009de, type: 3}
@@ -61,7 +61,7 @@ MonoBehaviour:
     gravity: 1
     scrollRequirement: 4
     maxHeight: 12
-    blockDifficulty: 2
+    blockDifficulty: 5
     stage: 0
   - internalLevel: 50
     dropFrames: 100

@@ -7,12 +7,15 @@ public class ScoreController : MonoBehaviour
 
     public static ScoreController instance;
 
+    [SerializeField] private int maxMultiplier = 5;
+
     int iterations;
     int sectionCleared;
     bool sectionCheck;
 
     public int GradeRequirements { get { return score.gradeRequirements.Length > score.grade + 1 ? score.gradeRequirements[score.grade + 1] : 69; } }
     public int Score { get { return score.score; } }
+    public int MaxMultiplier { get { return maxMultiplier; } }
 
     public int Level { get { return score.level; } }
 
@@ -99,8 +102,14 @@ public class ScoreController : MonoBehaviour
     public void UpdateMultiplier(int amount)
     {
         score.multiplier += amount;
-        score.multiplier = Mathf.Clamp(score.multiplier, 1, 5);
+        score.multiplier = Mathf.Clamp(score.multiplier, 1, maxMultiplier);
     }
+
+    public bool HasMaxMultiplier()
+    {
+        return Multiplier >= maxMultiplier;
+    }
+
     /// <summary>
     /// Set level to 0
     /// </summary>

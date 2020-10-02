@@ -97,6 +97,7 @@ public class IceClimberMovement : MonoBehaviour
         moveUp = JUMPHEIGHTURNINGPOINT;
         transform.position = startPosition; jumping = true;
         invulnerableTime = invulnerableDuration;
+        GetComponent<SpriteRenderer>().color = Color.white;
     }
 
     private void Update()
@@ -205,7 +206,7 @@ public class IceClimberMovement : MonoBehaviour
             Physics2D.Raycast(transform.position + (currentBackwardDirection * .2f) + (Vector3.up * 1.7f), currentBackwardDirection, backRayDistance, terrainLayer)
         };
         #region Collision Debugs
-        //Show Back Wall Collision Checks
+        /*//Show Back Wall Collision Checks
         Debug.DrawLine(transform.position + (currentForwardDirection * .2f) + (Vector3.up * .05f), transform.position + (Vector3.up * .05f) + (currentForwardDirection * rayDistance), Color.red);
         Debug.DrawLine(transform.position + (currentForwardDirection * .2f) + (Vector3.up * 1f), transform.position + (Vector3.up * 1f) + (currentForwardDirection * rayDistance), Color.red);
         Debug.DrawLine(transform.position + (currentForwardDirection * .2f) + (Vector3.up * 1.7f), transform.position + (Vector3.up * 1.7f) + (currentForwardDirection * rayDistance), Color.red);
@@ -213,7 +214,7 @@ public class IceClimberMovement : MonoBehaviour
         Debug.DrawLine(transform.position + (currentBackwardDirection * .2f) + (Vector3.up * .05f), transform.position + (Vector3.up * .05f) + (currentBackwardDirection * rayDistance), Color.red);
         Debug.DrawLine(transform.position + (currentBackwardDirection * .2f) + (Vector3.up * 1f), transform.position + (Vector3.up * 1f) + (currentBackwardDirection * rayDistance), Color.red);
         Debug.DrawLine(transform.position + (currentBackwardDirection * .2f) + (Vector3.up * 1.7f), transform.position + (Vector3.up * 1.7f) + (currentBackwardDirection * rayDistance), Color.red);
-        
+        */
         #endregion
         RaycastHit2D forwardHit = frontWallRaycasts.FirstOrDefault(ray => ray.collider != null);
         RaycastHit2D backwardHit = backWallRaycasts.FirstOrDefault(ray => ray.collider != null);

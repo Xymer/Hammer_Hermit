@@ -45,6 +45,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -95,7 +97,7 @@ GameObject:
   - component: {fileID: 820213182}
   - component: {fileID: 203295681}
   - component: {fileID: 203295682}
-  - component: {fileID: 201236522}
+  - component: {fileID: 4558836450119996789}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -133,6 +135,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -187,7 +191,11 @@ MonoBehaviour:
   jumpSpeed: 1.25
   jumpDecreaseSpeed: 2.5
   stunDuration: 1
+  invulnerableDuration: 1
   matrix: {fileID: 0}
+  terrainLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &820213181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,8 +210,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   matrix: {fileID: 0}
   hammerOffset: 1
-  tick: 0.25
-  tock: 0
+  activeHitboxTime: 0
+  activeHitboxDuration: 0.25
 --- !u!95 &820213182
 Animator:
   serializedVersion: 3
@@ -270,7 +278,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.40625, y: 2}
   m_EdgeRadius: 0
---- !u!114 &201236522
+--- !u!114 &4558836450119996789
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

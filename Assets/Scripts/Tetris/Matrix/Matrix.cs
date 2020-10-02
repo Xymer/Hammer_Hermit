@@ -723,6 +723,8 @@ public class Matrix : MonoBehaviour
                 {
                     StartCoroutine(FragileReaction(pos));
                 }
+
+                StartCoroutine(UpdateFallingBlocksAbove(pos.x, pos.y));
             }
             else
                 SoundController.instance.PlaySound("break", .75f);

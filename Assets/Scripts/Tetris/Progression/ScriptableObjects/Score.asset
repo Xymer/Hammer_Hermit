@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be980f57f3716d6439bb6a0f07f474e8, type: 3}
   m_Name: Score
   m_EditorClassIdentifier: 
-  gradeRequirements: 000000008813000050c30000a086010020a1070040420f00404b4c00
+  gradeRequirements: 000000008813000050c3000090d0030020a1070040420f00404b4c00
   maxGrade: 7

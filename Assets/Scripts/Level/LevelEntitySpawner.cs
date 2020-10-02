@@ -20,7 +20,6 @@ public class LevelEntitySpawner : MonoBehaviour
     }
     void HeightReached()
     {
-        //Debug.Log(ScoreController.instance.Level);
         heightLevel++;
         if (Random.Range(0f, 1f) < .125f)
         {
@@ -33,6 +32,16 @@ public class LevelEntitySpawner : MonoBehaviour
     void SpawnEntity()
     {
         GameObject gameObject = objects[Random.Range(0, objects.Length)];
+
+        if (objects.Length > 1 && gameObject.CompareTag("Jewel") && ScoreController.instance.HasMaxMultiplier())
+        {
+            do
+            {
+                gameObject = objects[Random.Range(0, objects.Length)];
+            }
+            while (gameObject.CompareTag("Jewel"));
+        }
+
         gameObject = Instantiate(gameObject, matrix.transform);
         gameObject.GetComponent<LevelEntity>().UponSpawn();
     }

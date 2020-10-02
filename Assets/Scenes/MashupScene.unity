@@ -2120,7 +2120,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 48.85
+  m_fontSize: 46.75
   m_fontSizeBase: 90
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2690,7 +2690,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 47.75
+  m_fontSize: 45.5
   m_fontSizeBase: 90
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4387,6 +4387,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: {fileID: 11400000, guid: eaf200d037cb935429e70b5aa6498173, type: 2}
+  maxMultiplier: 5
 --- !u!1 &1567045984
 GameObject:
   m_ObjectHideFlags: 0
@@ -4780,7 +4781,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 65.15
+  m_fontSize: 62.1
   m_fontSizeBase: 90
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4952,7 +4953,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03c283152e1e90740862361fea82040e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meterInterval: 8
+  meterInterval: 18
   objects:
   - {fileID: 2901008277798379895, guid: 0ba8f2733a27a1b40ae0c060173d9c0b, type: 3}
 --- !u!1 &1687924504
@@ -5288,7 +5289,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50.05
+  m_fontSize: 47.7
   m_fontSizeBase: 90
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6134,6 +6135,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1214896911774628708, guid: a42540bca90376249b4708a1a49357c9,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1214896911774628708, guid: a42540bca90376249b4708a1a49357c9,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1214896911774628708, guid: a42540bca90376249b4708a1a49357c9,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1627750288147900333, guid: a42540bca90376249b4708a1a49357c9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2299359266930561594, guid: a42540bca90376249b4708a1a49357c9,
         type: 3}
       propertyPath: m_IsActive
@@ -6214,7 +6235,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3333642596016481873, guid: a42540bca90376249b4708a1a49357c9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a42540bca90376249b4708a1a49357c9, type: 3}
 --- !u!1001 &5847570228960122920
 PrefabInstance:

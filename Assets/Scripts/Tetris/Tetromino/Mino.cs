@@ -34,9 +34,9 @@ public class Mino : MonoBehaviour
         solid,
         breakable,
         cloud,
-        fragile,
         falling,
         trator,
+        fragile,
         star
     }
 
@@ -73,7 +73,7 @@ public class Mino : MonoBehaviour
             {
                 tratorAnimation.enabled = true;
                 direction = -1;
-                tratorAnimation.SetFloat("direction", direction);
+                //tratorAnimation.SetFloat("direction", direction);
             }
             tratorAnimation.runtimeAnimatorController = GameRules.instance.animatedTile;
         }
