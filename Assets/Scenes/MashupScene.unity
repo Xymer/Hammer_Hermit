@@ -2120,7 +2120,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 46.75
+  m_fontSize: 52.15
   m_fontSizeBase: 90
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2300,6 +2300,7 @@ GameObject:
   - component: {fileID: 785306073}
   - component: {fileID: 785306074}
   - component: {fileID: 785306075}
+  - component: {fileID: 785306076}
   m_Layer: 0
   m_Name: UI Controller
   m_TagString: Untagged
@@ -2348,6 +2349,13 @@ MonoBehaviour:
   - {fileID: -2441827187164915251, guid: 0436b721a186eea429ac6776502fa4d0, type: 3}
   - {fileID: 1044432809352561828, guid: 0436b721a186eea429ac6776502fa4d0, type: 3}
   - {fileID: 2249377826736229789, guid: 0436b721a186eea429ac6776502fa4d0, type: 3}
+  flashGrades:
+  - {fileID: -505992034849110783, guid: 5ab44fb7105f3984ea3fd3020094890a, type: 3}
+  - {fileID: 6158457408767912137, guid: 5ab44fb7105f3984ea3fd3020094890a, type: 3}
+  - {fileID: -8511825384333084550, guid: 5ab44fb7105f3984ea3fd3020094890a, type: 3}
+  - {fileID: 4831646642853621286, guid: 5ab44fb7105f3984ea3fd3020094890a, type: 3}
+  - {fileID: 4847462138073082608, guid: 5ab44fb7105f3984ea3fd3020094890a, type: 3}
+  - {fileID: 3872610500002643244, guid: 5ab44fb7105f3984ea3fd3020094890a, type: 3}
   flash: {fileID: 904416044}
   endScreen: {fileID: 2136143591}
   endScreenScore: {fileID: 1759324226}
@@ -2376,6 +2384,102 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!82 &785306076
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 785306072}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 592e76c8f308c324cbb6bcdadc78c921, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &793852189
 GameObject:
   m_ObjectHideFlags: 0
@@ -2690,7 +2794,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45.5
+  m_fontSize: 51.35
   m_fontSizeBase: 90
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2876,13 +2980,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1567045985}
-  m_RootOrder: 2
+  m_Father: {fileID: 1687924505}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.10002899, y: 0}
-  m_SizeDelta: {x: 0.2000122, y: 0.19999695}
+  m_AnchoredPosition: {x: -0.37683868, y: 0.29711914}
+  m_SizeDelta: {x: -0.7827759, y: -0.72701263}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &904416044
 MonoBehaviour:
@@ -2904,7 +3008,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -505992034849110783, guid: 5ab44fb7105f3984ea3fd3020094890a,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3719,10 +3824,10 @@ RectTransform:
   m_Father: {fileID: 1567045985}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.013479167, y: 0.69100004}
-  m_AnchorMax: {x: 0.10347917, y: 0.848741}
-  m_AnchoredPosition: {x: 48.58136, y: -29.483154}
-  m_SizeDelta: {x: 102.98229, y: 93.917244}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.08135986, y: 0.016845703}
+  m_SizeDelta: {x: 3.9822922, y: 2.917244}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1226916815
 MonoBehaviour:
@@ -4418,13 +4523,12 @@ RectTransform:
   m_Children:
   - {fileID: 1226916814}
   - {fileID: 1687924505}
-  - {fileID: 904416043}
   m_Father: {fileID: 335589135}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.013479167, y: 0.6916296}
   m_AnchorMax: {x: 0.10347917, y: 0.848741}
-  m_AnchoredPosition: {x: -0.4000244, y: 0.1000061}
+  m_AnchoredPosition: {x: -0.40014648, y: 0.1000061}
   m_SizeDelta: {x: -0.7999878, y: 0.19999695}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1567045987
@@ -4781,7 +4885,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 62.1
+  m_fontSize: 70.05
   m_fontSizeBase: 90
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4967,6 +5071,7 @@ GameObject:
   - component: {fileID: 1687924505}
   - component: {fileID: 1687924507}
   - component: {fileID: 1687924506}
+  - component: {fileID: 1687924508}
   m_Layer: 5
   m_Name: Grade
   m_TagString: Untagged
@@ -4984,14 +5089,15 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 904416043}
   m_Father: {fileID: 1567045985}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.013479167, y: 0.6916296}
-  m_AnchorMax: {x: 0.10347917, y: 0.848741}
-  m_AnchoredPosition: {x: 48.80133, y: -29.598633}
-  m_SizeDelta: {x: 100.58233, y: 92.338066}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.30133057, y: -0.09863281}
+  m_SizeDelta: {x: 1.5823288, y: 1.3380661}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1687924506
 MonoBehaviour:
@@ -5032,6 +5138,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687924504}
   m_CullTransparentMesh: 0
+--- !u!95 &1687924508
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687924504}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c8397eac616a76e4483c62e4cd9554ef, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1689675151 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4389791156755415337, guid: 6bf6069a27d08db4ab00719a4d9af9d8,
@@ -5289,7 +5414,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 47.7
+  m_fontSize: 53.8
   m_fontSizeBase: 90
   m_fontWeight: 400
   m_enableAutoSizing: 1

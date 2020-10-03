@@ -45,6 +45,8 @@ public class UIController : MonoBehaviour
     [SerializeField]
     Sprite[] grades;
     [SerializeField]
+    Sprite[] flashGrades;
+    [SerializeField]
     Image flash;
 
     [SerializeField]
@@ -96,9 +98,12 @@ public class UIController : MonoBehaviour
         if (gradeIndex <= score.grade - 1)
         {
             gradeIndex++;
-            StopCoroutine(FlashGrade());
-            StartCoroutine(FlashGrade());
+            //StopCoroutine(FlashGrade());
+            //StartCoroutine(FlashGrade());
             grade.sprite = grades[gradeIndex];
+            grade.transform.GetChild(0).GetComponent<Image>().sprite = flashGrades[gradeIndex];
+            grade.GetComponent<Animator>().SetTrigger("RankUp");
+            GetComponent<AudioSource>().Play();
         }
     }
 

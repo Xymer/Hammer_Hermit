@@ -1,0 +1,394 @@
+fileFormatVersion: 2
+guid: 5ab44fb7105f3984ea3fd3020094890a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3872610500002643244
+    second: BlankRanking_ScoreRankGraphics_PH_0
+  - first:
+      213: 4847462138073082608
+    second: BlankRanking_ScoreRankGraphics_PH_1
+  - first:
+      213: 4831646642853621286
+    second: BlankRanking_ScoreRankGraphics_PH_2
+  - first:
+      213: -8511825384333084550
+    second: BlankRanking_ScoreRankGraphics_PH_3
+  - first:
+      213: 6158457408767912137
+    second: BlankRanking_ScoreRankGraphics_PH_4
+  - first:
+      213: -505992034849110783
+    second: BlankRanking_ScoreRankGraphics_PH_5
+  - first:
+      213: -2734396518980102925
+    second: BlankRanking_ScoreRankGraphics_PH_6
+  - first:
+      213: -2807125385335107447
+    second: BlankRanking_ScoreRankGraphics_PH_7
+  - first:
+      213: 3360744288252117740
+    second: BlankRanking_ScoreRankGraphics_PH_8
+  - first:
+      213: -2069534358291432265
+    second: BlankRanking_ScoreRankGraphics_PH_9
+  - first:
+      213: 8264893017574185087
+    second: BlankRanking_ScoreRankGraphics_PH_10
+  - first:
+      213: 7271849741240296333
+    second: BlankRanking_ScoreRankGraphics_PH_11
+  - first:
+      213: -1282228968849894989
+    second: BlankRanking_ScoreRankGraphics_PH_12
+  - first:
+      213: 4056126082957790098
+    second: BlankRanking_ScoreRankGraphics_PH_13
+  - first:
+      213: 76622604320766854
+    second: BlankRanking_ScoreRankGraphics_PH_14
+  - first:
+      213: -1104906841243371416
+    second: BlankRanking_ScoreRankGraphics_PH_15
+  - first:
+      213: -4289627498047098808
+    second: BlankRanking_ScoreRankGraphics_PH_16
+  - first:
+      213: -7760508612477356102
+    second: BlankRanking_ScoreRankGraphics_PH_17
+  - first:
+      213: 9060922724535798169
+    second: BlankRanking_ScoreRankGraphics_PH_18
+  - first:
+      213: 2833474416509569638
+    second: BlankRanking_ScoreRankGraphics_PH_19
+  - first:
+      213: -7549902117774996733
+    second: BlankRanking_ScoreRankGraphics_PH_20
+  - first:
+      213: 4906869027427389744
+    second: BlankRanking_ScoreRankGraphics_PH_21
+  - first:
+      213: 3840605972300173444
+    second: BlankRanking_ScoreRankGraphics_PH_22
+  - first:
+      213: -4204417056431815991
+    second: BlankRanking_ScoreRankGraphics_PH_23
+  - first:
+      213: -4995500749193858730
+    second: BlankRanking_ScoreRankGraphics_PH_24
+  - first:
+      213: 7474488315614772639
+    second: BlankRanking_ScoreRankGraphics_PH_25
+  - first:
+      213: 6657103433574337194
+    second: BlankRanking_ScoreRankGraphics_PH_26
+  - first:
+      213: 5800790747646179982
+    second: BlankRanking_ScoreRankGraphics_PH_27
+  - first:
+      213: -5575236087294601589
+    second: BlankRanking_ScoreRankGraphics_PH_28
+  - first:
+      213: 2698134570971118327
+    second: BlankRanking_ScoreRankGraphics_PH_29
+  - first:
+      213: -3635687221072536842
+    second: BlankRanking_ScoreRankGraphics_PH_30
+  - first:
+      213: -6161634246628626131
+    second: BlankRanking_ScoreRankGraphics_PH_31
+  - first:
+      213: 8020032843053781869
+    second: BlankRanking_ScoreRankGraphics_PH_32
+  - first:
+      213: -8005809052138297340
+    second: BlankRanking_ScoreRankGraphics_PH_33
+  - first:
+      213: -5261840963152238048
+    second: BlankRanking_ScoreRankGraphics_PH_34
+  - first:
+      213: 9215407833159589657
+    second: BlankRanking_ScoreRankGraphics_PH_35
+  - first:
+      213: 466032592724377788
+    second: BlankRanking_ScoreRankGraphics_PH_36
+  - first:
+      213: -8589945842074567704
+    second: BlankRanking_ScoreRankGraphics_PH_37
+  - first:
+      213: -8168085848384832622
+    second: BlankRanking_ScoreRankGraphics_PH_38
+  - first:
+      213: -1105125899018327940
+    second: BlankRanking_ScoreRankGraphics_PH_39
+  - first:
+      213: 3123359699421205079
+    second: BlankRanking_ScoreRankGraphics_PH_40
+  - first:
+      213: -8798729606770495977
+    second: BlankRanking_ScoreRankGraphics_PH_41
+  - first:
+      213: -5538341069515811923
+    second: BlankRanking_ScoreRankGraphics_PH_42
+  - first:
+      213: -6505777931066480637
+    second: BlankRanking_ScoreRankGraphics_PH_43
+  - first:
+      213: 7663642209279049398
+    second: BlankRanking_ScoreRankGraphics_PH_44
+  - first:
+      213: -8658470174688662181
+    second: BlankRanking_ScoreRankGraphics_PH_45
+  - first:
+      213: 3349643775015154560
+    second: BlankRanking_ScoreRankGraphics_PH_46
+  - first:
+      213: -6771899749204774306
+    second: BlankRanking_ScoreRankGraphics_PH_47
+  - first:
+      213: -8807503982835554814
+    second: BlankRanking_ScoreRankGraphics_PH_48
+  - first:
+      213: -2169833408883618913
+    second: BlankRanking_ScoreRankGraphics_PH_49
+  - first:
+      213: 4830819190141714704
+    second: BlankRanking_ScoreRankGraphics_PH_50
+  - first:
+      213: 1743784130552899498
+    second: BlankRanking_ScoreRankGraphics_PH_51
+  - first:
+      213: -8933200655079931623
+    second: BlankRanking_ScoreRankGraphics_PH_52
+  - first:
+      213: 9138172747146203544
+    second: BlankRanking_ScoreRankGraphics_PH_53
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BlankRanking_ScoreRankGraphics_PH_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 193
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2dfa165bb64eb530800000000000000
+      internalID: 3872610500002643244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlankRanking_ScoreRankGraphics_PH_1
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 0
+        width: 193
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fa6002b125a54340800000000000000
+      internalID: 4847462138073082608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlankRanking_ScoreRankGraphics_PH_2
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 0
+        width: 193
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62eaf73c5057d0340800000000000000
+      internalID: 4831646642853621286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlankRanking_ScoreRankGraphics_PH_3
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 0
+        width: 193
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a787ca819ebefd980800000000000000
+      internalID: -8511825384333084550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlankRanking_ScoreRankGraphics_PH_4
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 0
+        width: 193
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c8ebf5626c377550800000000000000
+      internalID: 6158457408767912137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlankRanking_ScoreRankGraphics_PH_5
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 0
+        width: 193
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10544a7dcea5af8f0800000000000000
+      internalID: -505992034849110783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
