@@ -235,12 +235,32 @@ public class Matrix : MonoBehaviour
 
         return false;
     }
+    public bool IsObstructedNoMatrixFloor(Tetromino tetromino)
+    {
+        foreach (Transform mino in tetromino.transform)
+        {
+            Vector2Int xy = GetPositionInMatrix(mino);
+
+            if (IsPositionNextToMatrix(new Vector2Int(xy.x, xy.y)))
+            {
+                return true;
+            }
+            if (xy.y >= 0 && grid[xy.x, xy.y] != null)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
 
     /// <summary>
     /// Check if tetromino is bellow matrix.
     /// </summary>
     public bool IsBellowMatrix(Tetromino tetromino)
     {
+        if (tetromino == null)
+            return true;
         foreach (Transform mino in tetromino.transform)
         {
             Vector2Int xy = GetPositionInMatrix(mino);
@@ -252,6 +272,24 @@ public class Matrix : MonoBehaviour
         }
 
         return true;
+    }
+    /// <summary>
+    /// Check if tetromino is partly bellow matrix.
+    /// </summary>
+    public bool IsPartlyBelowMatrix(Tetromino tetromino)
+    {
+        if (tetromino == null)
+            return true;
+        foreach (Transform mino in tetromino.transform)
+        {
+            Vector2Int xy = GetPositionInMatrix(mino);
+
+            if (xy.y < 0)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 
     /// <summary>
@@ -267,6 +305,18 @@ public class Matrix : MonoBehaviour
         }
 
         return true;
+    }
+    /// <summary>
+    /// Check if position is next to matrix.
+    /// </summary>
+    public bool IsPositionNextToMatrix(Vector2Int position)
+    {
+        if (position.x > width - 1 || position.x < 0)
+        {
+            return true;
+        }
+
+        return false;
     }
 
     /// <summary>

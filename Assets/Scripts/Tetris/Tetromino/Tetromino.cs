@@ -75,7 +75,7 @@ public abstract class Tetromino : MonoBehaviour
     public bool MoveLeft()
     {
         transform.Translate(new Vector3(-1, 0), Space.World);
-        if (matrix.IsObstructed(this))
+        if (matrix.IsObstructedNoMatrixFloor(this))
         {
             Right();
             return false;
@@ -92,7 +92,7 @@ public abstract class Tetromino : MonoBehaviour
     public bool MoveRight()
     {
         transform.Translate(new Vector3(1, 0), Space.World);
-        if (matrix.IsObstructed(this))
+        if (matrix.IsObstructedNoMatrixFloor(this))
         {
             Left();
             return false;

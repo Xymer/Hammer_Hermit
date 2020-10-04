@@ -106,6 +106,10 @@ public class PlayerInput : MonoBehaviour
         }
         else
         {
+            if (input.IsButtonDown(PlayerButton.A))
+            {
+                gameController.DownPressed();
+            }
             if (input.IsButtonDown(PlayerButton.Left))
             {
                 dasTicker = GameRules.instance.rules.dasFrames;
@@ -122,6 +126,8 @@ public class PlayerInput : MonoBehaviour
                     gameController.TetrominoUpdated();
                 }
             }
+            if (gameController.matrix.IsPartlyBelowMatrix(gameController.activeTetromino))
+                return;
             if (input.IsButtonDown(PlayerButton.Y))
             {
                 CheckObstructed();
@@ -155,10 +161,6 @@ public class PlayerInput : MonoBehaviour
                     }
                     gameController.TetrominoUpdated();
                 }
-            }
-            if (input.IsButtonDown(PlayerButton.A))
-            {
-                gameController.DownPressed();
             }
         }
     }
