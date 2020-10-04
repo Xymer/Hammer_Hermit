@@ -200,7 +200,7 @@ public class GameController : MonoBehaviour
         if (!activeTetromino)
             return;
 
-        if (matrix.IsObstructed(activeTetromino, new Vector2Int(0, -1)))
+        if (matrix.IsObstructedNoMatrix(activeTetromino, new Vector2Int(0, -1)))
         {
             if (!floored && lockFramesTicker == GameRules.instance.rules.lockFrames)
             {
