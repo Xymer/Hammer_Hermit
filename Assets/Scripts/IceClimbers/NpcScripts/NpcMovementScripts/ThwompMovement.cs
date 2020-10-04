@@ -180,7 +180,7 @@ public class ThwompMovement : MonoBehaviour
                         transform.position = newPosition;
                         KillPlayerOnObstruced(position);
                     }
-                    if (startSide == Vector2Int.right && !isReturning)
+                    else if (startSide == Vector2Int.right && !isReturning)
                     {
                         xGridOffset = predictedPosition.x + GetComponent<SpriteRenderer>().sprite.bounds.extents.x;
                         transform.position = newPosition;
